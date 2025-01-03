@@ -3,6 +3,20 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
 }
+@await Component.InvokeAsync("_DefaultFeatureComponentPartial")
 
-<h1>Index</h1>
+@await Component.InvokeAsync("_DefaultHomePageProductListComponentPartial")
 
+@await Component.InvokeAsync("_DefaultAboutComponentPartial")
+
+@await Component.InvokeAsync("_DefaultServicesComponentPartial")
+
+@await Component.InvokeAsync("_DefaultProductListExploreCitiesComponentPartial")
+
+@await Component.InvokeAsync("_DefaultOurClientsComponentPartial")
+
+@await Component.InvokeAsync("_DefaultSubFeatureComponentPartial")
+
+@await Component.InvokeAsync("_DefaultDiscountOfDayComponentPartial")
+
+@await Component.InvokeAsync("_DefaultBrandComponentPartial")
